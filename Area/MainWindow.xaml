@@ -19,10 +19,10 @@
         <Grid x:Name="CircleView" Visibility="Hidden">
             <StackPanel>
                 <TextBlock Text="Радиус" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtRadius" Text="{Binding Radius}"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtRadius" FontSize="20" Margin="5"/>
 
                 <TextBlock Text="Площадь" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtArea" Text="{Binding Area}" IsReadOnly="True"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtArea" IsReadOnly="True"  FontSize="20" Margin="5"/>
 
                 <Button x:Name="CalcClick" Content="Рассчитать"/>
             </StackPanel>
@@ -30,16 +30,16 @@
         <Grid x:Name="TriangleView" Visibility="Hidden">
             <StackPanel>
                 <TextBlock Text="Первая сторона" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtValueA" Text="{Binding Side1}"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueA" FontSize="20" Margin="5"/>
 
                 <TextBlock Text="Вторая сторона" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtValueB" Text="{Binding Side2}"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueB" FontSize="20" Margin="5"/>
 
                 <TextBlock Text="Третья сторона" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtValueC" Text="{Binding Side3}"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueC" FontSize="20" Margin="5"/>
 
                 <TextBlock Text="Площадь" FontSize="20" Margin="5"/>
-                <TextBox x:Name="txtResult" Text="{Binding Area}" IsReadOnly="True"  FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtResult" IsReadOnly="True"  FontSize="20" Margin="5"/>
 
                 <Button x:Name="CalcTrClick" Content="Рассчитать"/>
             </StackPanel>
