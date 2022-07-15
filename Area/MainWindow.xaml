@@ -1,0 +1,49 @@
+﻿<Window x:Class="Area.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Area"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="30">
+    <Grid>
+        <Grid x:Name="Choice">
+            <!--<TextBlock Text="Площадь какой фигуры необходимо найти?"/>-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="CircleClick" Content="Круг" Margin="20 150"/>
+            <Button Grid.Column="1" x:Name="TriangleClick" Content="Треуголник" Margin="20 150"/>
+        </Grid>
+        <Grid x:Name="CircleView" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock Text="Радиус" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtRadius" Text="{Binding Radius}"  FontSize="20" Margin="5"/>
+
+                <TextBlock Text="Площадь" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtArea" Text="{Binding Area}" IsReadOnly="True"  FontSize="20" Margin="5"/>
+
+                <Button x:Name="CalcClick" Content="Рассчитать"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="TriangleView" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock Text="Первая сторона" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueA" Text="{Binding Side1}"  FontSize="20" Margin="5"/>
+
+                <TextBlock Text="Вторая сторона" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueB" Text="{Binding Side2}"  FontSize="20" Margin="5"/>
+
+                <TextBlock Text="Третья сторона" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtValueC" Text="{Binding Side3}"  FontSize="20" Margin="5"/>
+
+                <TextBlock Text="Площадь" FontSize="20" Margin="5"/>
+                <TextBox x:Name="txtResult" Text="{Binding Area}" IsReadOnly="True"  FontSize="20" Margin="5"/>
+
+                <Button x:Name="CalcTrClick" Content="Рассчитать"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+     
+</Window>
